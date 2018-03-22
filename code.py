@@ -46,9 +46,8 @@ while True:
         Customer.ReqBook()
         Library.LendBook(Customer.Book)
     elif userChoice == "3":
-        RBook=Customer.ReturnBook()
-        if RBook1\
-                in Library.availableBooks:
+        RBook = Customer.ReturnBook()
+        if RBook in Library.availableBooks:
             print("Your Book has been already been returned!. So cant take it again!!")
             print()
         else:
@@ -58,3 +57,4 @@ while True:
         quit()
     else:
         print("Invalid Input")
+
